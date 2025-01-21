@@ -4,8 +4,10 @@ import  Form  from './Form.js';
 import  Wpis  from './Wpis.js';
 import  BrakZadan from './BrakZadan.js';
 import '../styles/ToDo.css'
+import Overlay from './Overlay.js';
 const ToDo = ()=> {
     const [listaZadan, setListaZadan] = useState([]);
+    const [overlay, setOverlay] = useState(false);
 
     const dodajZadanie = (tekst, czyWyroznione) => {
         const noweZadanie = { tekst, czyWyroznione };
@@ -14,6 +16,8 @@ const ToDo = ()=> {
 
     const usunZadanie = (index) => {
         const nowaLista = listaZadan.filter((_, i) => i !== index);
+        const usunieteZadanie = listaZadan[index];
+        setOverlay(!overlay);
         setListaZadan(nowaLista);
     };
 
@@ -60,6 +64,12 @@ const ToDo = ()=> {
                     ))
                 )}
             </ul>
+        
+        {
+            overlay&&(
+                <Overlay text={"Usunięto zadanie"} onClose={()=>setOverlay(!overlay)}/>
+            )
+        }
         </Ramka>
     );
 }
