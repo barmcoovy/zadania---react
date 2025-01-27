@@ -5,9 +5,9 @@ const Counter = () => {
     const previousCurrentRef = useRef(0);
 
     const handleCount = ()=>{
-        previousCurrentRef.current +=1  ;
+        previousCurrentRef.current = count  ;
         console.log(previousCurrentRef.current)
-        // setCount(count+1)
+        setCount(count+1)
     }
   return (
     <div>

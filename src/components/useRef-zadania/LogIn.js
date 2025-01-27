@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import '../styles/LogIn.css'
+import './LogIn.css'
 const LogIn = () => {
     const [person,setPerson] = useState(null);
 
@@ -20,7 +20,7 @@ const LogIn = () => {
   return (
     <div className='logIn-container'>
        
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className='form'>
             <input
             type='text'
                 text=""
@@ -31,14 +31,14 @@ const LogIn = () => {
                 type='checkbox'
                 ref={isAdminRef}
             />Administrator
-            <button type='submit'>Zatwierdź dane</button>
+            <button type='submit' className='button-submit'>Zatwierdź dane</button>
         </form>
         
         {
             person&& <>
             <h1>Dane osobowe</h1>
-                <h2>Nazwa: <span>{person.name}</span></h2>
-                <h3>Rola: <span>{person.isAdmin ? "Admin" : "Użytkownik"}</span></h3>
+                <h2>Nazwa: <span className='data'>{person.name}</span></h2>
+                <h3>Rola: <span className='data'>{person.isAdmin ? "Admin" : "Użytkownik"}</span></h3>
             </>
         }
     </div>

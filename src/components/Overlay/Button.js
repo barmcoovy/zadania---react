@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "../styles/Button.module.css";
-import "../styles/Style.css";
+import styles from "./Button.module.css";
+import "./Style.css";
 const Button = () => {
   return (
     <>

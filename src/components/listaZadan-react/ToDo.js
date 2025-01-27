@@ -4,7 +4,7 @@ import Ramka from "./Ramka.js";
 import Form from "./Form.js";
 import Wpis from "./Wpis.js";
 import BrakZadan from "./BrakZadan.js";
-import "../styles/ToDo.css";
+import "./ToDo.css";
 import Overlay from "../Overlay/Overlay.js";
 const ToDo = () => {
   const [listaZadan, setListaZadan] = useState([]);
