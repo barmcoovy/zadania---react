@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const Ramka = ({children}) => {
-  return (
-    <div style={{textAlign: "center"}}>
-            {children}
-        </div>
-  )
-}
+const Ramka = ({ children }) => {
+  return <div style={{ textAlign: "center" }}>{children}</div>;
+};
 
-export default Ramka
+export default Ramka;
