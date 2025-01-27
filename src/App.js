@@ -3,6 +3,8 @@ import ToDo from "./components/ToDo";
 import Overlay from "./components/Overlay";
 import Button from "./components/Button";
 import FocusInput from "./components/FocusInput";
+import Counter from "./components/Counter";
+import LogIn from "./components/LogIn";
 function App() {
   const [isVisible, setIsVisible] = useState(false);
   return (
@@ -18,7 +20,9 @@ function App() {
         )
       } */}
 
-      <FocusInput/>
+      {/* <FocusInput/> */}
+      {/* <Counter/> */}
+      <LogIn/>
     </div>
   );
 }
