@@ -1,10 +1,10 @@
 import { useState } from "react";
-import ToDo from "./components/ToDo";
-import Overlay from "./components/Overlay";
-import Button from "./components/Button";
-import FocusInput from "./components/FocusInput";
-import Counter from "./components/Counter";
-import LogIn from "./components/LogIn";
+import ToDo from "./components/listaZadan - react (useState)/ToDo";
+import Overlay from "./components/Overlay/Overlay";
+import Button from "./components/listaZadan - react (useState)/Button";
+import FocusInput from "./components/useRef - zadania/FocusInput";
+import Counter from "./components/useRef - zadania/Counter";
+import LogIn from "./components/useRef - zadania/LogIn";
 function App() {
   const [isVisible, setIsVisible] = useState(false);
   return (
